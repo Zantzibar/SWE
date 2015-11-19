@@ -5,48 +5,34 @@
 #ifndef COCKTAILMIXER_H_H
 #define COCKTAILMIXER_H_H
 
-#include "MischbaresRezepteBuch.h"
-#include "RezepturProzessor.h"
 
 /**
  * Initialisiert das System.
  * Bietet Userinterface.
  */
+#include "RezepturProzessor.h"
+#include "MischbaresRezepteBuch.h"
+#include "Zutatenliste.h"
+
+ //Initialisiert das System.
 class Cocktailmixer
 {
-	
 public:
-
 	// Konstruktor.
 	Cocktailmixer();
 
 	// Destruktor.
 	~Cocktailmixer();
 
-	// Initialisiert den Cocktail-Mixer.
-	void Initialisieren(int argc, char * argv[]);
-
-	/**
-	 * 
-	 */
-	void getMischbareRezepte();
-	/**
-	 * 
-	 */
-	void initialisiereSystem();
-	
 private:
-	/**
-	 * 
-	 */
-	MischbaresRezepteBuch *m_MischbaresRezepteBuch;
-	
-	/**
-	 * 
-	 */
-	RezepturProzessor *m_Rezepturprozessor;
-	
-	
+	// zutaten.
+	Zutatenliste * mZutaten;
+
+	// mischbare Rezepte.
+	MischbaresRezeptbuch * mRezepte;
+
+	// Rezeptprozessor.
+	Cocktailmixer * mProzessor;
 };
 
 #endif
