@@ -5,7 +5,6 @@
 #ifndef GERAET_H_H
 #define GERAET_H_H
 
-#include "stdafx.h"
 
 #include "Stampfer.h"
 #include "Mischer.h"

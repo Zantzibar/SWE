@@ -8,7 +8,7 @@
 /**
  * 
  */
-MischbaresRezepteBuch::MischbaresRezepteBuch()
+MischbaresRezepteBuch::MischbaresRezepteBuch(Zutatenliste * zutaten)
 {
 	//@todo mZutaten von datei fuellen und mischbare rezepte ins rezeptbuch uebertragen
 	
@@ -17,7 +17,7 @@ MischbaresRezepteBuch::MischbaresRezepteBuch()
 /**
  * 
  */
-void MischbaresRezepteBuch::filterRezeptbuch()
+void MischbaresRezepteBuch::rezepteFiltern(Zutatenliste * zutaten)
 {
 	
 }
@@ -25,8 +25,8 @@ void MischbaresRezepteBuch::filterRezeptbuch()
 /**
  * 
  */
-void MischbaresRezepteBuch::isRezeptMischbar()
+bool MischbaresRezepteBuch::istRezeptMischbar(Zutatenliste * zutaten, const Rezept * rezept)
 {
-	
+	return true;
 }
 

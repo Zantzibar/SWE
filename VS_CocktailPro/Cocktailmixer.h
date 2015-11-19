@@ -24,12 +24,15 @@ public:
 	// Destruktor.
 	~Cocktailmixer();
 
+	// Initialisiert den Cocktailmixer.
+	void Initialisieren(int argc, char * argv[]);
+
 private:
 	// zutaten.
 	Zutatenliste * mZutaten;
 
 	// mischbare Rezepte.
-	MischbaresRezeptbuch * mRezepte;
+	MischbaresRezepteBuch * mRezepte;
 
 	// Rezeptprozessor.
 	Cocktailmixer * mProzessor;

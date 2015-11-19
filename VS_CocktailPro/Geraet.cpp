@@ -2,7 +2,6 @@
  * @(#) Geraet.cpp
  */
 
-#include "stdafx.h"
 
 #include "Geraet.h"
 

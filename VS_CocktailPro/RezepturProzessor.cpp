@@ -7,7 +7,7 @@
 /**
  * 
  */
-RezepturProzessor::RezepturProzessor(vector<Rezepte> vRezepte)
+RezepturProzessor::RezepturProzessor()
 {
 	
 }

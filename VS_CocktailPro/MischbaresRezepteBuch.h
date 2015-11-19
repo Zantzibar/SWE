@@ -10,12 +10,12 @@
 #include "Zutatenliste.h"
  
  //Ein spezielles Rezeptbuch, das nur mischbare Rezepte enthält.
-class MischbaresRezeptbuch : public Rezeptbuch
+class MischbaresRezepteBuch : public Rezeptbuch
 {
 
 public:
 	//Konstruktor.
-	MischbaresRezeptbuch(Zutatenliste * zutaten);
+	MischbaresRezepteBuch(Zutatenliste * zutaten);
 
 private:
 	//Prüft, ob ein Rezept mischbar ist.

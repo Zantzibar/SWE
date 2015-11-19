@@ -7,8 +7,8 @@
 
 #include "Geraet.h"
 #include "Mischbehaelter.h"
-#include "Waage.h"
-#include "Rezeptbuch\Rezeptbuch.h"
+//#include "Waage.h"
+#include "Rezeptbuch.h"
 
 /**
  * Enthält ein Rezept und deligiert die einzelnen Schritte
@@ -20,7 +20,7 @@ public:
 	/**
 	 * 
 	 */
-	RezepturProzessor(vector<Rezept> vRezepte);
+	RezepturProzessor();
 	/**
 	 * 
 	 */

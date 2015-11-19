@@ -5,8 +5,12 @@
 #ifndef ZUTATENLISTE_H_H
 #define ZUTATENLISTE_H_H
 
-#include "stdafx.h"
+#include <string>
+#include <iostream>
+
 #include <vector>
+
+using namespace std;
 
 /**
  * Enthält Zutaten

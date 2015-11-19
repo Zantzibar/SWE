@@ -2,7 +2,6 @@
  * @(#) Dosierer.cpp
  */
 
-#include "stdafx.h"
 #include "Dosierer.h"
 
 

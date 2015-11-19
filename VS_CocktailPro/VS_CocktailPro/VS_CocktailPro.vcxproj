@@ -71,7 +71,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>$(ProjectDir);$(ProjectDir)..\Rezeptbuch;$(IncludePath)</IncludePath>
+    <IncludePath>$(ProjectDir)..\code3D\Rezeptbuch\;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
@@ -147,25 +147,22 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Cocktailmixer.h" />
+    <ClInclude Include="..\code3D\Rezeptbuch\Rezeptbuch.h" />
     <ClInclude Include="..\Dosierer.h" />
     <ClInclude Include="..\Geraet.h" />
     <ClInclude Include="..\MischbaresRezepteBuch.h" />
     <ClInclude Include="..\Mischbehaelter.h" />
     <ClInclude Include="..\Mischer.h" />
-    <ClInclude Include="..\Rezeptbuch\Rezeptbuch.h" />
     <ClInclude Include="..\RezepturProzessor.h" />
     <ClInclude Include="..\Stampfer.h" />
     <ClInclude Include="..\Waage.h" />
     <ClInclude Include="..\Zutatenliste.h" />
     <ClInclude Include="GlobalVars.h" />
-    <ClInclude Include="stdafx.h" />
-    <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Cocktailmixer.cpp" />
     <ClCompile Include="..\Dosierer.cpp" />
     <ClCompile Include="..\Geraet.cpp" />
-    <ClCompile Include="..\main.cpp" />
     <ClCompile Include="..\MischbaresRezepteBuch.cpp" />
     <ClCompile Include="..\Mischbehaelter.cpp" />
     <ClCompile Include="..\Mischer.cpp" />
@@ -174,13 +171,7 @@
     <ClCompile Include="..\Stampfer.cpp" />
     <ClCompile Include="..\Waage.cpp" />
     <ClCompile Include="..\Zutatenliste.cpp" />
-    <ClCompile Include="stdafx.cpp">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
-    </ClCompile>
-    <ClCompile Include="VS_CocktailPro.cpp" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
