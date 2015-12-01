@@ -10,9 +10,11 @@
       <itemPath>MischbaresRezepteBuch.h</itemPath>
       <itemPath>Mischbehaelter.h</itemPath>
       <itemPath>Mischer.h</itemPath>
+      <itemPath>Observer.h</itemPath>
       <itemPath>Rezeptbuch.h</itemPath>
       <itemPath>RezepturProzessor.h</itemPath>
       <itemPath>Stampfer.h</itemPath>
+      <itemPath>Subject.h</itemPath>
       <itemPath>Waage.h</itemPath>
       <itemPath>Zutatenliste.h</itemPath>
     </logicalFolder>
@@ -31,6 +33,7 @@
       <itemPath>Mischer.cpp</itemPath>
       <itemPath>RezepturProzessor.cpp</itemPath>
       <itemPath>Stampfer.cpp</itemPath>
+      <itemPath>Subject.cpp</itemPath>
       <itemPath>Waage.cpp</itemPath>
       <itemPath>Zutatenliste.cpp</itemPath>
     </logicalFolder>
@@ -45,10 +48,6 @@
                    kind="IMPORTANT_FILES_FOLDER">
       <itemPath>Makefile</itemPath>
     </logicalFolder>
-    <itemPath>Makefile</itemPath>
-    <itemPath>Observer.h</itemPath>
-    <itemPath>Subject.cpp</itemPath>
-    <itemPath>Subject.h</itemPath>
     <itemPath>main.cpp</itemPath>
   </logicalFolder>
   <projectmakefile>Makefile</projectmakefile>
@@ -72,8 +71,6 @@
       <item path="Geraet.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Geraet.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="Makefile" ex="false" tool="3" flavor2="0">
       </item>
       <item path="MischbaresRezepteBuch.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -145,8 +142,6 @@
       <item path="Geraet.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Geraet.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="Makefile" ex="false" tool="3" flavor2="0">
       </item>
       <item path="MischbaresRezepteBuch.cpp" ex="false" tool="1" flavor2="0">
       </item>
