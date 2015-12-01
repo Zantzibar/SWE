@@ -72,7 +72,7 @@ std::string Rezeptschritt::getZutat(void) const
 }
 
 /**
- * Konstruktor; legt tempor?r einen Initialisierer an, damit dieser die Liste auff?llt.
+ * Konstruktor; legt temporaer einen Initialisierer an, damit dieser die Liste auff?llt.
  *  
  */
 Rezeptbuch::Rezeptbuch(void)
