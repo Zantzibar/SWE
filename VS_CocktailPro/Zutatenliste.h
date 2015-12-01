@@ -24,8 +24,11 @@ public:
 private:
 
 	vector<string> m_Zutaten;
-	
-	
+
+
+	void ladeZutaten(string fileName);
+	bool hatZutat(string sZutat);
+	int getAnzahlZutaten() { return m_Zutaten.size(); };
 };
 
 #endif
