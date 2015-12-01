@@ -5,6 +5,17 @@
 
 #include "Geraet.h"
 
+Geraet::Geraet()
+{
+    
+}
+
+Geraet::Geraet(string bezeichnerFunktion)
+{
+
+}
+
+
 Geraet::~Geraet()
 {
 

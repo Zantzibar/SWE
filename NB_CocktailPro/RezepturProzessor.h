@@ -5,14 +5,15 @@
 #ifndef REZEPTURPROZESSOR_H_H
 #define REZEPTURPROZESSOR_H_H
 
-#include "Geraet.h"
+//#include "Geraet.h"
 #include "Mischbehaelter.h"
 //#include "Waage.h"
 #include "Rezeptbuch.h"
 #include "Zutatenliste.h"
 
+class Geraet;
 /**
- * Enthält ein Rezept und deligiert die einzelnen Schritte
+ * Enthï¿½lt ein Rezept und deligiert die einzelnen Schritte
  */
 class RezepturProzessor
 {

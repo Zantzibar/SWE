@@ -6,9 +6,9 @@
 #define GERAET_H_H
 
 
-#include "Stampfer.h"
-#include "Mischer.h"
-#include "Dosierer.h"
+#include <string>
+
+using namespace std;
 
 /**
  * Verarbeitet einen Rezeptschritt
@@ -17,35 +17,19 @@ class Geraet
 {
 	
 public:
+    Geraet();
+    Geraet(string bezeichnerFunktion);
+    ~Geraet();
 
-	Geraet::Geraet(std::string bezeichnerFunktion)
-	~Geraet();
+    /**
+     * 
+     */
+    void aktionAusfuehren(float menge);
+    /**
+     * 
+     */
 
-	/**
-	 * 
-	 */
-	void aktionAusfuehren(float menge);
-	/**
-	 * 
-	 */
-	
 private:
-	/**
-	 * 
-	 */
-	Dosierer m_dosierer;
-	
-	/**
-	 * 
-	 */
-	Mischer m_mischer;
-	
-	/**
-	 * 
-	 */
-	Stampfer m_stampfer;
-	
-	
 };
 
 #endif
