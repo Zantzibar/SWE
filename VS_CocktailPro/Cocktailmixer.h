@@ -35,7 +35,7 @@ private:
 	MischbaresRezepteBuch * mRezepte;
 
 	// Rezeptprozessor.
-	Cocktailmixer * mProzessor;
+	RezepturProzessor * mProzessor;
 };
 
 #endif

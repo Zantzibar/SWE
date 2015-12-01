@@ -10,7 +10,7 @@
 
 Zutatenliste::Zutatenliste()
 {
-	//@todo m_Zutaten fuellen
+	ladeZutaten("zutaten.txt");
 }
 
 // Laedt Zutaten aus einer Datei.

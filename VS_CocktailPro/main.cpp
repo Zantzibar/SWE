@@ -3,6 +3,8 @@
 // Ralf Hahn,  16.09.2015
 
 #include "Rezeptbuch.h"
+#include "Zutatenliste.h"
+#include "Cocktailmixer.h"
 
 #include <iostream>
 using namespace std;
@@ -12,11 +14,15 @@ int main()
 {
 
 int i=0;
+Cocktailmixer* cockMix = new Cocktailmixer();
+
+
+
 
 // das Rezeptbuch anlegen
-/*Rezeptbuch* MyRezeptbuch = new Rezeptbuch;
+//Rezeptbuch* MyRezeptbuch = new Rezeptbuch;
 
-
+/*
 // Rezeptliste ausgeben
 cout << "*********************************************" << endl;
 cout << "Es gibt " << MyRezeptbuch->getAnzahlRezepte() << " Cocktails" << endl;

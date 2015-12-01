@@ -9,6 +9,7 @@
 #include "Mischbehaelter.h"
 //#include "Waage.h"
 #include "Rezeptbuch.h"
+#include "Zutatenliste.h"
 
 /**
  * Enthält ein Rezept und deligiert die einzelnen Schritte
@@ -20,11 +21,11 @@ public:
 	/**
 	 * 
 	 */
-	RezepturProzessor();
+	RezepturProzessor(Zutatenliste * zutaten);
 	/**
 	 * 
 	 */
-	void zubereiten();
+	void zubereiten(Rezept* rezept);
 	
 private:
 	/**

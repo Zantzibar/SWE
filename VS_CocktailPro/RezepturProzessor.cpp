@@ -7,7 +7,7 @@
 /**
  * 
  */
-RezepturProzessor::RezepturProzessor()
+RezepturProzessor::RezepturProzessor(Zutatenliste * zutaten)
 {
 	
 }
@@ -15,7 +15,7 @@ RezepturProzessor::RezepturProzessor()
 /**
  * 
  */
-void RezepturProzessor::zubereiten()
+void RezepturProzessor::zubereiten(Rezept* rezept)
 {
 	
 }
