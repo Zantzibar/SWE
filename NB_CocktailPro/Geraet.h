@@ -18,7 +18,7 @@ class Geraet
 	
 public:
 
-	Geraet();
+	Geraet::Geraet(std::string bezeichnerFunktion)
 	~Geraet();
 
 	/**
