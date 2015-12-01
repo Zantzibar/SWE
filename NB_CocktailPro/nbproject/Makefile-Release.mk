@@ -43,6 +43,7 @@ OBJECTFILES= \
 	${OBJECTDIR}/Mischer.o \
 	${OBJECTDIR}/RezepturProzessor.o \
 	${OBJECTDIR}/Stampfer.o \
+	${OBJECTDIR}/Subject.o \
 	${OBJECTDIR}/Waage.o \
 	${OBJECTDIR}/Zutatenliste.o \
 	${OBJECTDIR}/main.o
@@ -111,6 +112,11 @@ ${OBJECTDIR}/Stampfer.o: Stampfer.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Stampfer.o Stampfer.cpp
+
+${OBJECTDIR}/Subject.o: Subject.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Subject.o Subject.cpp
 
 ${OBJECTDIR}/Waage.o: Waage.cpp 
 	${MKDIR} -p ${OBJECTDIR}

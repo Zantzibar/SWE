@@ -46,6 +46,9 @@
       <itemPath>Makefile</itemPath>
     </logicalFolder>
     <itemPath>Makefile</itemPath>
+    <itemPath>Observer.h</itemPath>
+    <itemPath>Subject.cpp</itemPath>
+    <itemPath>Subject.h</itemPath>
     <itemPath>main.cpp</itemPath>
   </logicalFolder>
   <projectmakefile>Makefile</projectmakefile>
@@ -84,6 +87,8 @@
       </item>
       <item path="Mischer.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="Observer.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="Rezeptbuch.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="RezepturProzessor.cpp" ex="false" tool="1" flavor2="0">
@@ -93,6 +98,10 @@
       <item path="Stampfer.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Stampfer.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Subject.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Subject.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Waage.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -151,6 +160,8 @@
       </item>
       <item path="Mischer.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="Observer.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="Rezeptbuch.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="RezepturProzessor.cpp" ex="false" tool="1" flavor2="0">
@@ -160,6 +171,10 @@
       <item path="Stampfer.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Stampfer.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Subject.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Subject.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Waage.cpp" ex="false" tool="1" flavor2="0">
       </item>
