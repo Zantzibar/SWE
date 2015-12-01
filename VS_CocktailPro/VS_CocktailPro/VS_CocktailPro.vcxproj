@@ -146,32 +146,30 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\Cocktailmixer.cpp" />
+    <ClCompile Include="..\Dosierer.cpp" />
+    <ClCompile Include="..\Geraet.cpp" />
+    <ClCompile Include="..\main.cpp" />
+    <ClCompile Include="..\MischbaresRezepteBuch.cpp" />
+    <ClCompile Include="..\Mischbehaelter.cpp" />
+    <ClCompile Include="..\Mischer.cpp" />
+    <ClCompile Include="..\RezepturProzessor.cpp" />
+    <ClCompile Include="..\Stampfer.cpp" />
+    <ClCompile Include="..\Waage.cpp" />
+    <ClCompile Include="..\Zutatenliste.cpp" />
+  </ItemGroup>
+  <ItemGroup>
     <ClInclude Include="..\Cocktailmixer.h" />
-    <ClInclude Include="..\code3D\Rezeptbuch\Rezeptbuch.h" />
     <ClInclude Include="..\Dosierer.h" />
     <ClInclude Include="..\Geraet.h" />
     <ClInclude Include="..\MischbaresRezepteBuch.h" />
     <ClInclude Include="..\Mischbehaelter.h" />
     <ClInclude Include="..\Mischer.h" />
+    <ClInclude Include="..\Rezeptbuch.h" />
     <ClInclude Include="..\RezepturProzessor.h" />
     <ClInclude Include="..\Stampfer.h" />
     <ClInclude Include="..\Waage.h" />
     <ClInclude Include="..\Zutatenliste.h" />
-    <ClInclude Include="GlobalVars.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="..\Cocktailmixer.cpp" />
-    <ClCompile Include="..\Dosierer.cpp" />
-    <ClCompile Include="..\Geraet.cpp" />
-    <ClCompile Include="..\MischbaresRezepteBuch.cpp" />
-    <ClCompile Include="..\Mischbehaelter.cpp" />
-    <ClCompile Include="..\Mischer.cpp" />
-    <ClCompile Include="..\Rezeptschritt.cpp" />
-    <ClCompile Include="..\RezepturProzessor.cpp" />
-    <ClCompile Include="..\Stampfer.cpp" />
-    <ClCompile Include="..\Waage.cpp" />
-    <ClCompile Include="..\Zutatenliste.cpp" />
-    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

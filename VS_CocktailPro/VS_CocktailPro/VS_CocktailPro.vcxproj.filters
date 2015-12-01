@@ -18,6 +18,41 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\Cocktailmixer.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dosierer.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Geraet.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MischbaresRezepteBuch.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Mischbehaelter.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Mischer.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\RezepturProzessor.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Stampfer.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Waage.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Zutatenliste.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
     <ClInclude Include="..\Cocktailmixer.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
@@ -36,6 +71,9 @@
     <ClInclude Include="..\Mischer.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
+    <ClInclude Include="..\Rezeptbuch.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
     <ClInclude Include="..\RezepturProzessor.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
@@ -45,52 +83,8 @@
     <ClInclude Include="..\Waage.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
-    <ClInclude Include="GlobalVars.h">
-      <Filter>Headerdateien</Filter>
-    </ClInclude>
     <ClInclude Include="..\Zutatenliste.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
-    <ClInclude Include="..\code3D\Rezeptbuch\Rezeptbuch.h">
-      <Filter>Headerdateien</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="..\Dosierer.cpp">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Geraet.cpp">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
-    <ClCompile Include="..\MischbaresRezepteBuch.cpp">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Mischbehaelter.cpp">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Mischer.cpp">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Rezeptschritt.cpp">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
-    <ClCompile Include="..\RezepturProzessor.cpp">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Stampfer.cpp">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Waage.cpp">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Cocktailmixer.cpp">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Zutatenliste.cpp">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
-    <ClCompile Include="main.cpp">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
   </ItemGroup>
 </Project>

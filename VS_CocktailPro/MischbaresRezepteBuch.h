@@ -8,9 +8,9 @@
 
 #include "Rezeptbuch.h"
 #include "Zutatenliste.h"
- 
- //Ein spezielles Rezeptbuch, das nur mischbare Rezepte enthält.
-class MischbaresRezepteBuch : public Rezeptbuch
+  
+ //Ein spezielles Rezeptbuch, das nur mischbare Rezepte enthält. jhjh
+class MischbaresRezepteBuch //: public Rezeptbuch
 {
 
 public:
