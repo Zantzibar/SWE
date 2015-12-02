@@ -13,21 +13,21 @@
 using namespace std;
 
 /**
- * Enthält Zutaten
+ * Enthï¿½lt Zutaten
  */
 class Zutatenliste
 {
 public:
 	Zutatenliste();
 
-
+        bool hatZutat(string sZutat);
 private:
 
 	vector<string> m_Zutaten;
 
 
 	void ladeZutaten(string fileName);
-	bool hatZutat(string sZutat);
+
 	int getAnzahlZutaten() { return m_Zutaten.size(); };
 };
 
