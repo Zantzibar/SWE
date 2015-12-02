@@ -9,8 +9,8 @@
 #include "Rezeptbuch.h"
 #include "Zutatenliste.h"
   
- //Ein spezielles Rezeptbuch, das nur mischbare Rezepte enthält. jhjh
-class MischbaresRezepteBuch //: public Rezeptbuch
+ //Ein spezielles Rezeptbuch, das nur mischbare Rezepte enthï¿½lt. jhjh
+class MischbaresRezepteBuch : public Rezeptbuch
 {
 
 public:
@@ -18,7 +18,7 @@ public:
 	MischbaresRezepteBuch(Zutatenliste * zutaten);
 
 private:
-	//Prüft, ob ein Rezept mischbar ist.
+	//Prï¿½ft, ob ein Rezept mischbar ist.
 	bool istRezeptMischbar(Zutatenliste * zutaten, const Rezept * rezept);
 
 	//Filtert die Rezepte des Buches, je nach Zustand der Cocktail-Maschine.

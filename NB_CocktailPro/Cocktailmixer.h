@@ -25,7 +25,7 @@ public:
 	~Cocktailmixer();
 
 	// Initialisiert den Cocktailmixer.
-	void Initialisieren(int argc, char * argv[]);
+	void Initialisieren();
 
 private:
 	// zutaten.

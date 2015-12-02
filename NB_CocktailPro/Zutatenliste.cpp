@@ -10,50 +10,50 @@
 
 Zutatenliste::Zutatenliste()
 {
-	ladeZutaten("zutaten.txt");
+    ladeZutaten("zutaten.txt");
 }
 
 // Laedt Zutaten aus einer Datei.
 void Zutatenliste::ladeZutaten(string fileName)
 {
-	// Die Zutatendatei definiert pro Zeile eine Zutat.
-	// Also: Zeile für Zeile einlesen und zur Liste hinzufügen.
+    // Die Zutatendatei definiert pro Zeile eine Zutat.
+    // Also: Zeile fï¿½r Zeile einlesen und zur Liste hinzufï¿½gen.
 
-	// Input-Stream anlegen.
-	ifstream in;
+    // Input-Stream anlegen.
+    ifstream in;
 
-	// Dateistream zum Einlesen öffnen.
-	in.open(fileName.c_str(), ios::in);
+    // Dateistream zum Einlesen ï¿½ffnen.
+    in.open(fileName.c_str(), ios::in);
 
-	if (!in)
-	{
-		cout << "Zutatendatei konnte nicht geöffnet werden!" << endl;
-		return;
-	}
+    if (!in)
+    {
+        cout << "Zutatendatei konnte nicht geï¿½ffnet werden!" << endl;
+        return;
+    }
 
-	cout << endl << "Lese Zutaten ein..." << endl;
+    cout << endl << "Lese Zutaten ein..." << endl;
 
-	// Zeile für Zeile einlesen.
-	string zeile;
-	while (getline(in, zeile))
-	{
-		m_Zutaten.push_back(zeile);
-	}
+    // Zeile fï¿½r Zeile einlesen.
+    string zeile;
+    while (getline(in, zeile))
+    {
+        m_Zutaten.push_back(zeile);
+    }
 
-	// Dateistream schließen.
-	in.close();
+    // Dateistream schlieï¿½en.
+    in.close();
 
-	cout << m_Zutaten.size() << " Zutaten wurden eingelesen!\n\n";
+    cout << m_Zutaten.size() << " Zutaten wurden eingelesen!\n\n";
 }
 
-//Überprüft, ob eine bestimmte Zutat verfügbar ist.
+//ï¿½berprï¿½ft, ob eine bestimmte Zutat verfï¿½gbar ist.
 bool Zutatenliste::hatZutat(string sZutat)
 {
-	for (unsigned int i = 0; i < m_Zutaten.size(); i++)
-	{
-		if (m_Zutaten[i] == sZutat)
-			return true;
-	}
+    for (unsigned int i = 0; i < m_Zutaten.size(); i++)
+    {
+        if (m_Zutaten[i] == sZutat)
+            return true;
+    }
 
-	return false;
+    return false;
 }

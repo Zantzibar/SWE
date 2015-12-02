@@ -63,11 +63,13 @@ FFLAGS=
 ASFLAGS=
 
 # Link Libraries and Options
-LDLIBSOPTIONS=
+LDLIBSOPTIONS=RezeptbuchBinaries/Rezeptbuch_g++_CASE_Ubuntu.o
 
 # Build Targets
 .build-conf: ${BUILD_SUBPROJECTS}
 	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/nb_cocktailpro
+
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/nb_cocktailpro: RezeptbuchBinaries/Rezeptbuch_g++_CASE_Ubuntu.o
 
 ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/nb_cocktailpro: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}

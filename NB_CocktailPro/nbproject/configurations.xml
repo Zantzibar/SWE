@@ -59,6 +59,11 @@
         <rebuildPropChanged>false</rebuildPropChanged>
       </toolsSet>
       <compileType>
+        <linkerTool>
+          <linkerLibItems>
+            <linkerLibFileItem>RezeptbuchBinaries/Rezeptbuch_g++_CASE_Ubuntu.o</linkerLibFileItem>
+          </linkerLibItems>
+        </linkerTool>
       </compileType>
       <item path="Cocktailmixer.cpp" ex="false" tool="1" flavor2="0">
       </item>

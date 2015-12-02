@@ -10,7 +10,7 @@
  */
 MischbaresRezepteBuch::MischbaresRezepteBuch(Zutatenliste * zutaten)
 {
-	//@todo mZutaten von datei fuellen und mischbare rezepte ins rezeptbuch uebertragen
+    //@todo mZutaten von datei fuellen und mischbare rezepte ins rezeptbuch uebertragen
 	
 }
 
