@@ -5,24 +5,13 @@
 
 #include "Geraet.h"
 
-Geraet::Geraet()
+Geraet::Geraet(std::string aktion)
 {
-    
+    mAktion = aktion;
 }
 
-Geraet::Geraet(string bezeichnerFunktion)
+std::string Geraet::getAktion() const
 {
-
-}
-
-
-Geraet::~Geraet()
-{
-
-}
-
-void Geraet::aktionAusfuehren(float menge)
-{
-	
+    return mAktion;
 }
 

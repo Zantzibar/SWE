@@ -8,7 +8,6 @@
 #include "Geraet.h"
 #include "Observer.h"
 #include "Waage.h"
-
 #include <string>
 
 /**
@@ -22,31 +21,23 @@ public:
 
 	// Konstruktor
 	Dosierer(Waage * waage, string zutat);
-
-	//Destruktor
+        //Destruktor
 	~Dosierer();
-
-	void aktionAusfuehren(float menge);
-	
+	bool isVentilOpen()const {return m_bVentilOffen;}
+        std::string getZutat() const;
+        void aktionAusfuehren(float menge);
 	void setVentilStatus(bool bState);
-	bool isVentilOpen();
-        
 	virtual void update();
 private:
 	
-	void dosieren(float gewicht, int timeMs);
-
+	void dosieren(float gewichtProStk, int timeMs);
 	//Die beobachtete Waage.
 	Waage  * mWaage;
-
 	// Die Zutat, die dieser Dosierer dosieren kann.
 	string mZutat;
-
 	// Das derzeitige Mengenlimit. Wird in update() ueberprueft.
 	int mMengenLimit;
-        
-        bool m_bVentil;
-	
+        bool m_bVentilOffen;
 };
 
 #endif

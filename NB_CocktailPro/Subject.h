@@ -4,7 +4,7 @@
 #include "Observer.h"
 #include <list>
 
-// Repraesentiert das Subject im Beobachtermuster.
+// Repraesentiert das Subject im ObserverPattern.
 class Subject
 {
 

@@ -41,6 +41,7 @@ OBJECTFILES= \
 	${OBJECTDIR}/MischbaresRezepteBuch.o \
 	${OBJECTDIR}/Mischbehaelter.o \
 	${OBJECTDIR}/Mischer.o \
+	${OBJECTDIR}/MyTimer.o \
 	${OBJECTDIR}/RezepturProzessor.o \
 	${OBJECTDIR}/Stampfer.o \
 	${OBJECTDIR}/Subject.o \
@@ -104,6 +105,11 @@ ${OBJECTDIR}/Mischer.o: Mischer.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Mischer.o Mischer.cpp
+
+${OBJECTDIR}/MyTimer.o: MyTimer.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/MyTimer.o MyTimer.cpp
 
 ${OBJECTDIR}/RezepturProzessor.o: RezepturProzessor.cpp 
 	${MKDIR} -p ${OBJECTDIR}

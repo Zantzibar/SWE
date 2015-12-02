@@ -13,7 +13,7 @@ Waage::Waage() : m_fTotalgewicht(0.0f), m_fDeltaGewicht(0.0f)
 void Waage::addGewicht(float gewicht)
 {
     m_fTotalgewicht += gewicht;
-    //this->notify();
+    this->notify();
 }
 
 void Waage::subtractGewicht(float gewicht)

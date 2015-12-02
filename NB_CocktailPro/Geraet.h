@@ -15,21 +15,20 @@ using namespace std;
  */
 class Geraet
 {
-	
 public:
-    Geraet();
-    Geraet(string bezeichnerFunktion);
-    ~Geraet();
+	// Konstruktor.
+	Geraet(std::string geraetename);
 
-    /**
-     * 
-     */
-    void aktionAusfuehren(float menge);
-    /**
-     * 
-     */
+    //Führt die Aktion der Einheit aus.
+       virtual void verarbeiten(float menge) = 0;
+
+    //Liefert die Aktion der Einheit zurück.
+	std::string getAktion() const;
 
 private:
+	//Der Name der Aktion, die diese Einheit durchführt.
+	std::string mAktion;
+
 };
 
 #endif
