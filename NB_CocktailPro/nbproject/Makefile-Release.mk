@@ -41,10 +41,10 @@ OBJECTFILES= \
 	${OBJECTDIR}/MischbaresRezepteBuch.o \
 	${OBJECTDIR}/Mischbehaelter.o \
 	${OBJECTDIR}/Mischer.o \
-	${OBJECTDIR}/MyTimer.o \
 	${OBJECTDIR}/RezepturProzessor.o \
 	${OBJECTDIR}/Stampfer.o \
 	${OBJECTDIR}/Subject.o \
+	${OBJECTDIR}/Timer.o \
 	${OBJECTDIR}/Waage.o \
 	${OBJECTDIR}/Zutatenliste.o \
 	${OBJECTDIR}/main.o
@@ -104,11 +104,6 @@ ${OBJECTDIR}/Mischer.o: Mischer.cpp
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Mischer.o Mischer.cpp
 
-${OBJECTDIR}/MyTimer.o: MyTimer.cpp 
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/MyTimer.o MyTimer.cpp
-
 ${OBJECTDIR}/RezepturProzessor.o: RezepturProzessor.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
@@ -123,6 +118,11 @@ ${OBJECTDIR}/Subject.o: Subject.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Subject.o Subject.cpp
+
+${OBJECTDIR}/Timer.o: Timer.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Timer.o Timer.cpp
 
 ${OBJECTDIR}/Waage.o: Waage.cpp 
 	${MKDIR} -p ${OBJECTDIR}

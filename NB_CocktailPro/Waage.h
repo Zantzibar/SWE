@@ -9,7 +9,7 @@
 /**
  * Wiegt Inhalt
  */
-class Waage: Subject
+class Waage : public Subject
 {
 	
 public:

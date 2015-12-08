@@ -15,11 +15,12 @@ public:
 	/**
 	 * 
 	 */
-	void sleep(int iMS);
+	Timer();
+
 	/**
 	 * 
 	 */
-	Timer();
+	void sleep(int iMS);
 	/**
 	 * 
 	 */

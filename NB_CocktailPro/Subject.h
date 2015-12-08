@@ -5,8 +5,11 @@
 #ifndef SUBJECT_H_H
 #define SUBJECT_H_H
 
-#include "list<Observer"$ *", >.h"
 #include "Observer.h"
+#include <vector>
+
+using namespace std;
+
 /**
  * 
  */
@@ -31,7 +34,7 @@ private:
 	/**
 	 * 
 	 */
-	list<Observer"$ *", > m_Obersver;
+	vector<Observer*> m_Obersver;
 	
 	
 };

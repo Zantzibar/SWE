@@ -5,6 +5,11 @@
 
 #include "Geraet.h"
 
+Geraet::Geraet()
+{
+    
+}
+
 Geraet::Geraet(std::string aktion)
 {
     mAktion = aktion;

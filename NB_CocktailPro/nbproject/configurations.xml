@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<configurationDescriptor version="94">
+<configurationDescriptor version="95">
   <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
@@ -10,12 +10,12 @@
       <itemPath>MischbaresRezepteBuch.h</itemPath>
       <itemPath>Mischbehaelter.h</itemPath>
       <itemPath>Mischer.h</itemPath>
-      <itemPath>MyTimer.h</itemPath>
       <itemPath>Observer.h</itemPath>
       <itemPath>Rezeptbuch.h</itemPath>
       <itemPath>RezepturProzessor.h</itemPath>
       <itemPath>Stampfer.h</itemPath>
       <itemPath>Subject.h</itemPath>
+      <itemPath>Timer.h</itemPath>
       <itemPath>Waage.h</itemPath>
       <itemPath>Zutatenliste.h</itemPath>
     </logicalFolder>
@@ -32,10 +32,10 @@
       <itemPath>MischbaresRezepteBuch.cpp</itemPath>
       <itemPath>Mischbehaelter.cpp</itemPath>
       <itemPath>Mischer.cpp</itemPath>
-      <itemPath>MyTimer.cpp</itemPath>
       <itemPath>RezepturProzessor.cpp</itemPath>
       <itemPath>Stampfer.cpp</itemPath>
       <itemPath>Subject.cpp</itemPath>
+      <itemPath>Timer.cpp</itemPath>
       <itemPath>Waage.cpp</itemPath>
       <itemPath>Zutatenliste.cpp</itemPath>
     </logicalFolder>
@@ -91,10 +91,6 @@
       </item>
       <item path="Mischer.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="MyTimer.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="MyTimer.h" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="Observer.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Rezeptbuch.h" ex="false" tool="3" flavor2="0">
@@ -110,6 +106,10 @@
       <item path="Subject.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Subject.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Timer.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Timer.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Waage.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -166,10 +166,6 @@
       </item>
       <item path="Mischer.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="MyTimer.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="MyTimer.h" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="Observer.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Rezeptbuch.h" ex="false" tool="3" flavor2="0">
@@ -185,6 +181,10 @@
       <item path="Subject.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Subject.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Timer.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Timer.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Waage.cpp" ex="false" tool="1" flavor2="0">
       </item>
