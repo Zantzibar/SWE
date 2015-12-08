@@ -21,14 +21,16 @@ public:
 	Zutatenliste();
 
         bool hatZutat(string sZutat);
+	int getAnzahlZutaten() { return m_Zutaten.size(); };
+        string getZutat(int idx){return m_Zutaten[idx];};
+
 private:
 
 	vector<string> m_Zutaten;
 
-
 	void ladeZutaten(string fileName);
 
-	int getAnzahlZutaten() { return m_Zutaten.size(); };
+
 };
 
 #endif

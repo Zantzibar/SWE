@@ -5,26 +5,37 @@
 #ifndef MISCHBEHAELTER_H_H
 #define MISCHBEHAELTER_H_H
 
+#include "Observer.h"
 #include "Waage.h"
+
+
 /**
- * Enthält Zutaten und entleert sich.
+ * Enthï¿½lt Zutaten und entleert sich.
  */
-class Mischbehaelter
+class Mischbehaelter : public Observer
 {
 	
 public:
-	/**
-	 * 
-	 */
-	void entleeren();
+    Mischbehaelter(){};
+    Mischbehaelter(Waage * waage);
+
+    /**
+     * 
+     */
+    void entleeren();
+
+    virtual void update();
+    
+    void abflussOeffnen(bool bOffen){m_bOffen = bOffen;};
+    bool isAbflussOffen(){return m_bOffen;};
 	
 private:
-	/**
-	 * 
-	 */
-	Waage * g_Waage;
-	
-	
+    /**
+     * 
+     */
+    Waage * m_Waage;
+    bool m_bOffen;
+    
 };
 
 #endif

@@ -7,7 +7,7 @@
 /**
  * 
  */
-void Mischer::aktionAufsuehren(float menge)
+void Mischer::aktionAusfuehren(float menge)
 {
 	
 }

@@ -5,20 +5,32 @@
 #include "Rezeptbuch.h"
 #include "Zutatenliste.h"
 #include "Cocktailmixer.h"
+#include "Timer.h"
 
 #include <iostream>
-using namespace std;
 #include <iomanip>
 
-int main()
+
+using namespace std;
+
+int main(int argc, char * argv[])
 {
     cout << "start programm" << endl;
+
+    // turbo modus aktiv?
+    for (int i = 0; i < argc; i++)
+    {
+        if (strcmp(argv[i], "turbo") == 0)
+        {
+            Timer::setTurboModeAktiv(true);
+            cout << "Starte im TURBO-Modus!" << endl;
+
+            break;
+        }
+    }
     
-    int i=0;
     Cocktailmixer* cockMix = new Cocktailmixer();
 
-
-    
     
 
     // zum testen der lib

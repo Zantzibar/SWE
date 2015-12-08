@@ -10,23 +10,23 @@
  */
 class Timer
 {
-	
+    
 public:
-	/**
-	 * 
-	 */
-	Timer();
+    // Konstruktor.
+    Timer();
 
-	/**
-	 * 
-	 */
-	void sleep(int iMS);
-	/**
-	 * 
-	 */
-	static bool sb_TurboMode;
-	
-	
+    void sleep(int iMS);
+
+    static bool isTurboModeAktiv();
+
+    static void setTurboModeAktiv(bool bActive);
+
+private:
+    /**
+     * turbo modus aktiv?
+     */
+    static bool sb_TurboMode;
+
 };
 
 #endif

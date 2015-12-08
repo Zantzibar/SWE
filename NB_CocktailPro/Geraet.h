@@ -18,17 +18,17 @@ class Geraet
 public:
     Geraet();
     // Konstruktor.
-    Geraet(std::string geraetename);
+    Geraet(string geraetename);
 
     //Führt die Aktion der Einheit aus.
-    virtual void verarbeiten(float menge) = 0;
+    virtual void aktionAusfuehren(float menge) = 0;
 
     //Liefert die Aktion der Einheit zurück.
-    std::string getAktion() const;
+    string getAktion() const;
 
 private:
     //Der Name der Aktion, die diese Einheit durchführt.
-    std::string mAktion;
+    string mAktion;
 
 };
 

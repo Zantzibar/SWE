@@ -5,17 +5,19 @@
 #ifndef STAMPFER_H_H
 #define STAMPFER_H_H
 
+#include "Geraet.h"
+
 /**
  * Stampft x Zeiteinheiten
  */
-class Stampfer
+class Stampfer : public Geraet
 {
 	
 public:
-	/**
-	 * 
-	 */
-	void aktionAusfuehren(float menge);
+    /**
+     * 
+     */
+    virtual void aktionAusfuehren(float menge);
 	
 };
 

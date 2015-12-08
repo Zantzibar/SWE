@@ -15,7 +15,7 @@ void Dosierer::aktionAusfuehren(float menge)
 /**
  * 
  */
-void Dosierer:: dosieren(float gewicht, int timems)
+void Dosierer::dosieren(float gewicht, int timems)
 {
     m_Waage->attach(this);
     

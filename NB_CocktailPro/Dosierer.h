@@ -20,11 +20,11 @@ public:
 	/**
 	 * 
 	 */
-	void aktionAusfuehren(float menge);
+	virtual void aktionAusfuehren(float menge);
 	/**
 	 * 
 	 */
-	Dosierer(const Waage * waage, ::string sZutat);
+	Dosierer(const Waage * waage, string sZutat);
 	/**
 	 * 
 	 */
@@ -38,6 +38,7 @@ public:
 	 */
 	void update();
 	
+        string getZutat(){return m_sZutat;};
 private:
 	
 	void  dosieren(float gewicht, int timems);
@@ -48,6 +49,7 @@ private:
         
 	Waage * m_Waage;
 	
+        string m_sZutat;
 	
 };
 
