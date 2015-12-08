@@ -9,7 +9,8 @@
  */
 void Waage::updategewicht(float differenz)
 {
-	
+    m_fTotalgewicht += differenz;
+    this->notify();
 }
 
 /**

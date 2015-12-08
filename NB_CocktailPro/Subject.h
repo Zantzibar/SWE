@@ -20,11 +20,11 @@ public:
 	/**
 	 * 
 	 */
-	void attach(const Observer * obs);
+	void attach(Observer * obs);
 	/**
 	 * 
 	 */
-	void dettach(const Observer * obs);
+	void detach(Observer * obs);
 	/**
 	 * 
 	 */
@@ -34,7 +34,7 @@ private:
 	/**
 	 * 
 	 */
-	vector<Observer*> m_Obersver;
+	vector<Observer*> m_vObservers;
 	
 	
 };

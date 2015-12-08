@@ -13,7 +13,7 @@
  * Dosiert die Jeweilige Zutat. 
  * Ventil gewisse Zeit offen/geschlossen bis Gewicht erreicht ist.
  */
-class Dosierer: Geraet, Observer
+class Dosierer: public Geraet, Observer
 {
 	
 public:
@@ -39,18 +39,13 @@ public:
 	void update();
 	
 private:
-	/**
-	 * 
-	 */
+	
 	void  dosieren(float gewicht, int timems);
-	/**
-	 * 
-	 */
+	
 	bool m_bVentilOffen;
 	
-	/**
-	 * 
-	 */
+	int m_maxMenge;
+        
 	Waage * m_Waage;
 	
 	
