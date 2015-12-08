@@ -5,6 +5,7 @@
 
 #include "Mischbehaelter.h"
 #include "Timer.h"
+#include <iostream>
 
 using namespace std;
 
@@ -19,6 +20,7 @@ Mischbehaelter::Mischbehaelter(Waage* pWaage)
  */
 void Mischbehaelter::entleeren()
 {
+    cout << "entleere Mischbehaelter" << endl;
     m_Waage->attach(this);
 
     Timer timer;
@@ -37,5 +39,16 @@ void Mischbehaelter::entleeren()
 
 void Mischbehaelter::update()
 {
-    
+    int iGewGesamt = m_Waage->getTotalGewicht();
+
+    if (iGewGesamt <= 0)
+        iGewGesamt = 0;
+
+    cout << iGewGesamt << endl << flush;
+
+    if (iGewGesamt <= 0)
+    {
+        cout << "Abfluss schließen" << endl;
+        abflussOeffnen(false); // schließen        
+    }
 }

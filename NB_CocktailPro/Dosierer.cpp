@@ -40,10 +40,10 @@ void Dosierer::setVentilOffen(bool vState)
 /**
  * 
  */
-Dosierer::Dosierer(const Waage * waage, ::string sZutat)
+Dosierer::Dosierer(const Waage * waage, string sZutat)
 {
     m_maxMenge = 0; // vorlaeufig.. muss menge noch unter aktion ausfuehren bekommen....diese wiederum ruft dosiern auf und setztmax menge = maxMenge
-    
+    m_sZutat = sZutat;
 }
 
 /**
