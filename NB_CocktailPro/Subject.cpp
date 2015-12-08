@@ -29,6 +29,6 @@ void Subject::attach(Observer * obs)
  */
 void Subject::detach(Observer * obs)
 {   
-    //m_vObservers.erase(obs); //hier noch vectorspezifisch anpassen
+    m_vObservers.erase(m_vObservers.begin() + 1);; //wird hier an der richtigen stelle gelöscht
 }
 
