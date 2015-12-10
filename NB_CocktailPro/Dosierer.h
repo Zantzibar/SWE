@@ -20,11 +20,11 @@ public:
 	/**
 	 * 
 	 */
-	virtual void aktionAusfuehren(float menge);
+	Dosierer(Waage * waage, string sZutat);
 	/**
 	 * 
 	 */
-	Dosierer(const Waage * waage, string sZutat);
+	virtual void aktionAusfuehren(float menge);
 	/**
 	 * 
 	 */
@@ -41,16 +41,13 @@ public:
         string getZutat(){return m_sZutat;};
 private:
 	
-	void  dosieren(float gewicht, int timems);
-	
-	bool m_bVentilOffen;
-	
-	int m_maxMenge;
-        
-	Waage * m_Waage;
-	
-        string m_sZutat;
-	
+    bool m_bVentilOffen;
+    int m_maxMenge;
+    Waage * m_Waage;
+    string m_sZutat;
+
+    void dosieren(float gewicht, int iTime);
+
 };
 
 #endif

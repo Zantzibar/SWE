@@ -41,8 +41,7 @@ void RezepturProzessor::zubereiten(Rezept* rezept)
         Rezeptschritt* schritt = rezept->getRezeptSchritt(i);
 
         Geraet* einheit = mapGeraetZutat[schritt->getZutat()];
-	cout << schritt->getZutat()<< " wird dosiert."<<endl;
-        einheit->aktionAusfuehren(schritt->getMenge());
+	einheit->aktionAusfuehren(schritt->getMenge());
     }
 
     m_Mischbehaelter->entleeren();

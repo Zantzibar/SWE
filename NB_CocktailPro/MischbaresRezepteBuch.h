@@ -20,10 +20,6 @@ public:
 private:
 	//Pr�ft, ob ein Rezept mischbar ist.
 	bool istRezeptMischbar(Zutatenliste * zutaten, const Rezept * rezept);
-
-	//Filtert die Rezepte des Buches, je nach Zustand der Cocktail-Maschine.
-	void rezepteFiltern(Zutatenliste * zutaten);
-
 };
 
 #endif

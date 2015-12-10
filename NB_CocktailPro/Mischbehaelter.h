@@ -16,7 +16,6 @@ class Mischbehaelter : public Observer
 {
 	
 public:
-    Mischbehaelter(){};
     Mischbehaelter(Waage * waage);
 
     /**

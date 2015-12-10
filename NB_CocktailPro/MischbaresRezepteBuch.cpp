@@ -47,14 +47,6 @@ MischbaresRezepteBuch::MischbaresRezepteBuch(Zutatenliste * zutaten)
 /**
  * 
  */
-void MischbaresRezepteBuch::rezepteFiltern(Zutatenliste * zutaten)
-{
-	
-}
-
-/**
- * 
- */
 bool MischbaresRezepteBuch::istRezeptMischbar(Zutatenliste * zutaten, const Rezept * rezept)
 {
 	return true;

@@ -13,6 +13,10 @@ class Waage : public Subject
 {
 	
 public:
+    	/**
+	 * 
+	 */
+	Waage();
 	/**
 	 * 
 	 */
@@ -29,10 +33,7 @@ public:
 	 * 
 	 */
 	void updategewicht(float differenz);
-	/**
-	 * 
-	 */
-	Waage();
+
 	
 private:
 	/**

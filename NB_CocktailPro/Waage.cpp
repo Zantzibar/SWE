@@ -4,12 +4,26 @@
 
 
 #include "Waage.h"
+#include <iostream>
+
+/**
+ * 
+ */
+Waage::Waage()
+{
+    m_fDeltaGewicht = 0.0f;
+    m_fTotalgewicht = 0.0f;
+}
+
+
 /**
  * 
  */
 void Waage::updategewicht(float differenz)
 {
     m_fTotalgewicht += differenz;
+    cout << "Gesamtgewicht: " << m_fTotalgewicht << " mg" << endl;
+    
     this->notify();
 }
 
@@ -18,7 +32,7 @@ void Waage::updategewicht(float differenz)
  */
 void Waage::updateDeltaGewicht(float gewicht)
 {
-	
+    m_fDeltaGewicht = gewicht;
 }
 
 /**
@@ -26,7 +40,7 @@ void Waage::updateDeltaGewicht(float gewicht)
  */
 float Waage::getTotalGewicht()
 {
-	return 0;
+    return m_fTotalgewicht;
 }
 
 /**
@@ -34,14 +48,5 @@ float Waage::getTotalGewicht()
  */
 float Waage::getDeltaGwicht()
 {
-	return 0;
+    return (m_fTotalgewicht - m_fDeltaGewicht);
 }
-
-/**
- * 
- */
-Waage::Waage()
-{
-	
-}
-

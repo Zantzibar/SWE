@@ -13,8 +13,8 @@
  */
 void Mischer::aktionAusfuehren(float menge)
 {
-    cout << endl << "Mischen[" << menge << "]..." << endl;
-
+    cout<<"Es wird gemischt - Bitte warten"<<endl;
+    
     Timer timer;
 
     // in sekunden umwandeln

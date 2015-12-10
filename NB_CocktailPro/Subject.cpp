@@ -10,12 +10,12 @@
  */
 void Subject::notify()
 {
-	std::vector<Observer*>::iterator i;
+    std::vector<Observer*>::iterator i;
 
-	for (i = m_vObservers.begin(); i != m_vObservers.end(); i++)
-	{
-		(*i)->update();
-	}
+    for (i = m_vObservers.begin(); i != m_vObservers.end(); i++)
+    {
+        (*i)->update();
+    }
 }
 
 
