@@ -10,7 +10,7 @@
  */
 void Subject::notify()
 {
-    std::vector<Observer*>::iterator i;
+    list<Observer*>::iterator i;
 
     for (i = m_vObservers.begin(); i != m_vObservers.end(); i++)
     {
@@ -29,6 +29,6 @@ void Subject::attach(Observer * obs)
  */
 void Subject::detach(Observer * obs)
 {   
-    m_vObservers.erase(m_vObservers.begin() + 1);; //wird hier an der richtigen stelle gelöscht
+    m_vObservers.remove(obs);
 }
 

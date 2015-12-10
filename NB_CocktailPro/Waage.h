@@ -6,6 +6,7 @@
 #define WAAGE_H_H
 
 #include "Subject.h"
+
 /**
  * Wiegt Inhalt
  */
@@ -28,7 +29,7 @@ public:
 	/**
 	 * 
 	 */
-	void updateDeltaGewicht(float gewicht);
+	void resetDeltaGewicht();
 	/**
 	 * 
 	 */

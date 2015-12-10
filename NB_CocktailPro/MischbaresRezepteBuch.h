@@ -18,8 +18,6 @@ public:
 	MischbaresRezepteBuch(Zutatenliste * zutaten);
 
 private:
-	//Pr�ft, ob ein Rezept mischbar ist.
-	bool istRezeptMischbar(Zutatenliste * zutaten, const Rezept * rezept);
 };
 
 #endif

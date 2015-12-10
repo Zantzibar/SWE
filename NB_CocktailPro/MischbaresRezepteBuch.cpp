@@ -43,12 +43,3 @@ MischbaresRezepteBuch::MischbaresRezepteBuch(Zutatenliste * zutaten)
     }
 
 }
-
-/**
- * 
- */
-bool MischbaresRezepteBuch::istRezeptMischbar(Zutatenliste * zutaten, const Rezept * rezept)
-{
-	return true;
-}
-

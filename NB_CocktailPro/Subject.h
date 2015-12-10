@@ -6,7 +6,7 @@
 #define SUBJECT_H_H
 
 #include "Observer.h"
-#include <vector>
+#include <list>
 
 using namespace std;
 
@@ -34,7 +34,7 @@ private:
 	/**
 	 * 
 	 */
-	vector<Observer*> m_vObservers;
+	list<Observer*> m_vObservers;
 	
 	
 };

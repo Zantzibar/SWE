@@ -30,9 +30,9 @@ void Waage::updategewicht(float differenz)
 /**
  * 
  */
-void Waage::updateDeltaGewicht(float gewicht)
+void Waage::resetDeltaGewicht()
 {
-    m_fDeltaGewicht = gewicht;
+    m_fDeltaGewicht = m_fTotalgewicht;
 }
 
 /**

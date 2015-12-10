@@ -25,7 +25,7 @@ Dosierer::Dosierer(Waage * waage, string sZutat)
 void Dosierer::aktionAusfuehren(float menge)
 {
     m_maxMenge = menge;
-    m_Waage->updateDeltaGewicht(0); // tare
+    m_Waage->resetDeltaGewicht(); // tare
     
     string sZutat = getZutat();
     
@@ -76,7 +76,7 @@ void Dosierer::dosieren(float gewicht, int timems)
  */
 void Dosierer::setVentilOffen(bool vState)
 {
-	m_bVentilOffen = vState;
+    m_bVentilOffen = vState;
 }
 
 /**
@@ -84,7 +84,7 @@ void Dosierer::setVentilOffen(bool vState)
  */
 bool Dosierer::isVentilOffen()
 {
-	return m_bVentilOffen;
+    return m_bVentilOffen;
 }
 
 // Methode der klasse update wird überschrieben. bei jedem aufruf (passiert wenn gewicht hinzugefügt wird ( wieviel wird pro einheit hinzugefügt?))

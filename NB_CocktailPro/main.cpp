@@ -17,6 +17,8 @@ int main(int argc, char * argv[])
 {
     cout << "start programm" << endl;
 
+    Timer::setTurboModeAktiv(true);
+
     // turbo modus aktiv?
     for (int i = 0; i < argc; i++)
     {

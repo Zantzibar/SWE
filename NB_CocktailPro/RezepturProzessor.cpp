@@ -41,7 +41,13 @@ void RezepturProzessor::zubereiten(Rezept* rezept)
         Rezeptschritt* schritt = rezept->getRezeptSchritt(i);
 
         Geraet* einheit = mapGeraetZutat[schritt->getZutat()];
-	einheit->aktionAusfuehren(schritt->getMenge());
+        
+        float menge = schritt->getMenge();
+        
+        if(schritt->getZutat() == "Limettenstuecke")
+            menge = menge*10;
+                    
+	einheit->aktionAusfuehren(menge);
     }
 
     m_Mischbehaelter->entleeren();
