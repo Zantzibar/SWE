@@ -39,6 +39,7 @@ public:
 	void update();
 	
         string getZutat(){return m_sZutat;};
+        //string getAktion(){return m_sZutat;}; // hinzugefügt füer den zugriff in vector
 private:
 	
     bool m_bVentilOffen;

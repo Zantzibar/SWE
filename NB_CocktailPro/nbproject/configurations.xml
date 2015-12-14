@@ -6,6 +6,7 @@
                    projectFiles="true">
       <itemPath>Cocktailmixer.h</itemPath>
       <itemPath>Dosierer.h</itemPath>
+      <itemPath>GUI.h</itemPath>
       <itemPath>Geraet.h</itemPath>
       <itemPath>MischbaresRezepteBuch.h</itemPath>
       <itemPath>Mischbehaelter.h</itemPath>
@@ -28,6 +29,7 @@
                    projectFiles="true">
       <itemPath>Cocktailmixer.cpp</itemPath>
       <itemPath>Dosierer.cpp</itemPath>
+      <itemPath>GUI.cpp</itemPath>
       <itemPath>Geraet.cpp</itemPath>
       <itemPath>MischbaresRezepteBuch.cpp</itemPath>
       <itemPath>Mischbehaelter.cpp</itemPath>
@@ -74,6 +76,10 @@
       <item path="Dosierer.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Dosierer.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="GUI.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="GUI.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Geraet.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -149,6 +155,10 @@
       <item path="Dosierer.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Dosierer.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="GUI.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="GUI.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Geraet.cpp" ex="false" tool="1" flavor2="0">
       </item>

@@ -16,6 +16,7 @@ class Stampfer : public Geraet
 	
 public:
     Stampfer();
+    Stampfer(string myAction){mAktion = myAction;};
     virtual void aktionAusfuehren(float menge);
 	
 };

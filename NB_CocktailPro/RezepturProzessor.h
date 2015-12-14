@@ -11,6 +11,7 @@
 #include "Rezeptbuch.h"
 #include "Zutatenliste.h"
 #include <map>
+#include <vector>
 
 using namespace std;
 
@@ -40,7 +41,10 @@ private:
     Geraet * m_Dosierstation;
 
     // Mappt Zutaten den entsprechenden Geraeten zu.
-    std::map<string, Geraet *> mapGeraetZutat;
+    //std::map<string, Geraet *> mapGeraetZutat;
+    
+    vector< Geraet * > vectorGeraetZutat;
+    
 
     /**
      * 

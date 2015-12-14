@@ -18,7 +18,7 @@ public:
 	 * 
 	 */
 	virtual void aktionAusfuehren(float menge);
-	
+	Mischer(string myAction){mAktion = myAction;};
 };
 
 #endif

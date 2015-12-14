@@ -15,7 +15,7 @@ Dosierer::Dosierer(Waage * waage, string sZutat)
     m_maxMenge = 0; // vorlaeufig.. muss menge noch unter aktion ausfuehren bekommen....diese wiederum ruft dosiern auf und setztmax menge = maxMenge
     m_sZutat = sZutat;
     m_Waage = waage;
-    
+    mAktion = sZutat; // doppelt rein
     cout << "Dosierer: " << getZutat() << " initialisiert" << endl;
 }
 

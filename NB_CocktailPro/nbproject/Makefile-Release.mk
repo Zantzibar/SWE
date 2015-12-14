@@ -37,6 +37,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 OBJECTFILES= \
 	${OBJECTDIR}/Cocktailmixer.o \
 	${OBJECTDIR}/Dosierer.o \
+	${OBJECTDIR}/GUI.o \
 	${OBJECTDIR}/Geraet.o \
 	${OBJECTDIR}/MischbaresRezepteBuch.o \
 	${OBJECTDIR}/Mischbehaelter.o \
@@ -83,6 +84,11 @@ ${OBJECTDIR}/Dosierer.o: Dosierer.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Dosierer.o Dosierer.cpp
+
+${OBJECTDIR}/GUI.o: GUI.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/GUI.o GUI.cpp
 
 ${OBJECTDIR}/Geraet.o: Geraet.cpp 
 	${MKDIR} -p ${OBJECTDIR}

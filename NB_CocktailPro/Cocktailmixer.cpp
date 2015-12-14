@@ -35,8 +35,9 @@ void Cocktailmixer::Initialisieren()
 
     int input = -1;
 
-    while (input != 0)
+    while (!cin.fail())
     {
+        
         int anzahlRezepte = mRezepte->getAnzahlRezepte();
 
         // (Gefilterte) Rezeptliste ausgeben.
@@ -49,20 +50,25 @@ void Cocktailmixer::Initialisieren()
         }
 
         cout << endl << "Bitte auswaehlen (0 zum Verlassen): ";
+        
         cin >> input;
 
-        if (input == 0)
-            break;
-
-        if (input <= anzahlRezepte)
+        //if (input == 0)
+        // break;
+        
+        if (input <= anzahlRezepte && input != 0)
         {
             mProzessor->zubereiten(mRezepte->getRezept(input-1));
         }
         else
         {
             cout << "Ungueltige Eingabe!" << endl;
+            //input = -1;
+            cin.clear();
+            cin.ignore(10000, '\n');
             continue;
         }
+        
     }
 
     cout << "Bye!" << endl;

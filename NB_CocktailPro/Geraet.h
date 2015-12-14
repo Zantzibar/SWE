@@ -20,13 +20,13 @@ public:
     // Konstruktor.
     Geraet(string geraetename);
 
-    //Führt die Aktion der Einheit aus.
+    //Führt die Aktion der Einheit aus. Spezifisch für die GeräteEinheit
     virtual void aktionAusfuehren(float menge) = 0;
 
     //Liefert die Aktion der Einheit zurück.
     string getAktion() const;
 
-private:
+protected:
     //Der Name der Aktion, die diese Einheit durchführt.
     string mAktion;
 

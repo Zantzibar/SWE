@@ -10,12 +10,14 @@
  * Initialisiert das System.
  * Bietet Userinterface.
  */
+#include "Subject.h"
+
 #include "RezepturProzessor.h"
 #include "MischbaresRezepteBuch.h"
 #include "Zutatenliste.h"
 
  //Initialisiert das System.
-class Cocktailmixer
+class Cocktailmixer //: public Subject
 {
 public:
 	// Konstruktor.
