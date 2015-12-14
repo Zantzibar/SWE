@@ -30,7 +30,7 @@ void Dosierer::aktionAusfuehren(float menge)
     string sZutat = getZutat();
     
     float gewichtProStck = 0.0f;
-    int timems = 1000; // Stimmt das so ?
+    int timems = 1000; 
 
     if(sZutat == "Limettenstuecke")
     {

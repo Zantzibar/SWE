@@ -10,7 +10,7 @@
 
 
 /**
- * Enth�lt Zutaten und entleert sich.
+ * Enthaelt Zutaten und entleert sich.
  */
 class Mischbehaelter : public Observer
 {

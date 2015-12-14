@@ -23,7 +23,7 @@ public:
 
 private:
     /**
-     * turbo modus aktiv?
+     * 
      */
     static bool sb_TurboMode;
 

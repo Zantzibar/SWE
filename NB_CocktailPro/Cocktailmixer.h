@@ -17,7 +17,7 @@
 #include "Zutatenliste.h"
 
  //Initialisiert das System.
-class Cocktailmixer //: public Subject
+class Cocktailmixer 
 {
 public:
 	// Konstruktor.

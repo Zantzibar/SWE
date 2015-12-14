@@ -17,10 +17,6 @@ void Stampfer::aktionAusfuehren(float menge)
     //Da die Zeit in Sekunden angegeben ist, wollen wir die Zeit in Millisekunden umwandeln
     menge *= 1000.0f;
     
-    
-    // Wir wollen maximal 10 Sterne im Ladebalken haben.
-    // Deshalb muessen wir berechnen, wieviel Zeit pro Stern
-    // vergehen soll.
     int n = 10;
     int t = (menge / n);
 

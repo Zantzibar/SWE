@@ -39,13 +39,9 @@ private:
      * 
      */
     Geraet * m_Dosierstation;
-
-    // Mappt Zutaten den entsprechenden Geraeten zu.
-    //std::map<string, Geraet *> mapGeraetZutat;
     
     vector< Geraet * > vectorGeraetZutat;
     
-
     /**
      * 
      */
