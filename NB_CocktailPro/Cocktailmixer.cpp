@@ -54,7 +54,7 @@ void Cocktailmixer::Initialisieren()
         if (input == 0)
             break;
 
-        if (input < anzahlRezepte)
+        if (input <= anzahlRezepte)
         {
             mProzessor->zubereiten(mRezepte->getRezept(input-1));
         }

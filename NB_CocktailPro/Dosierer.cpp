@@ -25,12 +25,12 @@ Dosierer::Dosierer(Waage * waage, string sZutat)
 void Dosierer::aktionAusfuehren(float menge)
 {
     m_maxMenge = menge;
-    m_Waage->resetDeltaGewicht(); // tare
+    m_Waage->resetDeltaGewicht(); // tara
     
     string sZutat = getZutat();
     
     float gewichtProStck = 0.0f;
-    int timems = 1000;
+    int timems = 1000; // Stimmt das so ?
 
     if(sZutat == "Limettenstuecke")
     {
@@ -64,7 +64,7 @@ void Dosierer::dosieren(float gewicht, int timems)
     {
         aTimer.sleep(timems);
         
-        // dosiere bis  abbruch...Ventil wird geschlossen über Waage->addgewicht->Subjekt->Observer->Update->UpdatevonDosierer->setventilOffen=true)
+        // dosiere bis abbruch...Ventil wird geschlossen über Waage->addgewicht->Subjekt->Observer->Update->UpdatevonDosierer->setventilOffen=true)
         m_Waage->updategewicht(gewicht);
     
     }
@@ -87,8 +87,9 @@ bool Dosierer::isVentilOffen()
     return m_bVentilOffen;
 }
 
-// Methode der klasse update wird überschrieben. bei jedem aufruf (passiert wenn gewicht hinzugefügt wird ( wieviel wird pro einheit hinzugefügt?))
-// wennn maxgewicht erreicht dann wir das ventil geschlossen
+// Methode der Klasse "Update" wird überschrieben. "Update" wird aufgerufen, wenn UpdateGewicht aufgerufenn wird.
+// Eiswurfel und Limettenstücke erhalten zudem noch unter "aktionAusführen" eine gesonderte Abfrage und Dosierparameter
+// wennn Maxgewicht erreicht wird, dann wir das Ventil geschlossen
 void Dosierer::update()
 {
     cout << m_Waage->getDeltaGwicht() << "/" << m_maxMenge << "g" << endl;

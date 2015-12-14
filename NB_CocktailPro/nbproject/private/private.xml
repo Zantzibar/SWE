@@ -7,32 +7,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/home/debian/SWE/NB_CocktailPro/main.cpp</file>
-            <file>file:/home/debian/SWE/NB_CocktailPro/MischbaresRezepteBuch.h</file>
-            <file>file:/home/debian/SWE/NB_CocktailPro/Geraet.h</file>
-            <file>file:/home/debian/SWE/NB_CocktailPro/Waage.cpp</file>
-            <file>file:/home/debian/SWE/NB_CocktailPro/Geraet.cpp</file>
-            <file>file:/home/debian/SWE/NB_CocktailPro/Dosierer.h</file>
-            <file>file:/home/debian/SWE/NB_CocktailPro/Cocktailmixer.cpp</file>
-            <file>file:/home/debian/SWE/NB_CocktailPro/Mischer.h</file>
-            <file>file:/home/debian/SWE/NB_CocktailPro/Subject.h</file>
-            <file>file:/home/debian/SWE/NB_CocktailPro/MischbaresRezepteBuch.cpp</file>
-            <file>file:/home/debian/SWE/NB_CocktailPro/Timer.cpp</file>
-            <file>file:/home/debian/SWE/NB_CocktailPro/RezepturProzessor.cpp</file>
-            <file>file:/home/debian/SWE/NB_CocktailPro/Observer.h</file>
-            <file>file:/home/debian/SWE/NB_CocktailPro/Mischbehaelter.h</file>
-            <file>file:/home/debian/SWE/NB_CocktailPro/Waage.h</file>
-            <file>file:/home/debian/SWE/NB_CocktailPro/Mischbehaelter.cpp</file>
-            <file>file:/home/debian/SWE/NB_CocktailPro/Mischer.cpp</file>
-            <file>file:/home/debian/SWE/NB_CocktailPro/Rezeptbuch.h</file>
-            <file>file:/home/debian/SWE/NB_CocktailPro/Dosierer.cpp</file>
-            <file>file:/home/debian/SWE/NB_CocktailPro/Zutatenliste.h</file>
-            <file>file:/home/debian/SWE/NB_CocktailPro/Timer.h</file>
-            <file>file:/home/debian/SWE/NB_CocktailPro/Subject.cpp</file>
-            <file>file:/home/debian/SWE/NB_CocktailPro/Stampfer.cpp</file>
             <file>file:/home/debian/SWE/NB_CocktailPro/Stampfer.h</file>
-            <file>file:/home/debian/SWE/NB_CocktailPro/Cocktailmixer.h</file>
+            <file>file:/home/debian/SWE/NB_CocktailPro/Stampfer.cpp</file>
+            <file>file:/home/debian/SWE/NB_CocktailPro/Timer.h</file>
+            <file>file:/home/debian/SWE/NB_CocktailPro/RezepturProzessor.cpp</file>
             <file>file:/home/debian/SWE/NB_CocktailPro/RezepturProzessor.h</file>
+            <file>file:/home/debian/SWE/NB_CocktailPro/Zutatenliste.h</file>
         </group>
     </open-files>
 </project-private>

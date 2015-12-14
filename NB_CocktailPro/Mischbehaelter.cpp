@@ -32,6 +32,15 @@ void Mischbehaelter::entleeren()
         // 25g/s
         timer.sleep(1000.0f); // 1s warten
         m_Waage->updategewicht(-25.0f); // abziehen
+//optional
+//        if(m_Waage->getTotalGewicht()<25.0f)
+//        {
+//            m_Waage->updategewicht(-(m_Waage->getTotalGewicht()));
+//        }
+//        else
+//        {
+//            m_Waage->updategewicht(-25.0f);
+//        }
     }
 
     m_Waage->detach(this);

@@ -9,17 +9,11 @@
 
 bool Timer::sb_TurboMode;
 
-/**
- * 
- */
 Timer::Timer()
 {
 	
 }
 
-/**
- * 
- */
 void Timer::sleep(int iMS)
 {
     // Gerippt von CloneAndOwn.

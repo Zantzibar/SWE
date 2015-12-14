@@ -23,7 +23,7 @@ public:
 
 	// Destruktor.
 	~Cocktailmixer();
-
+        
 	// Initialisiert den Cocktailmixer.
 	void Initialisieren();
 
