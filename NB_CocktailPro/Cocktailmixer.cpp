@@ -8,6 +8,7 @@
 #include <string>
 #include <sstream>
 #include <ctype.h>
+#include <stdio_ext.h>
 
  // Konstruktor.
 Cocktailmixer::Cocktailmixer()
@@ -53,22 +54,24 @@ void Cocktailmixer::Initialisieren()
         
         cin >> input;
 
-        //if (input == 0)
-        // break;
-        
-        if (input <= anzahlRezepte && input != 0)
+        if(cin.fail() || input > anzahlRezepte)
+        {
+            __fpurge(stdin);
+            cin.clear();
+            cin.ignore(cin.rdbuf()->in_avail());
+            input = -1;
+            cout << "\n\n--------------------------------------------------" << endl;
+            cout << "-------------  Ungueltige Eingabe!  --------------" << endl;            
+            cout << "--------------------------------------------------\n\n"<< endl;
+        }
+        else if (input == 0)
+        {
+            break;
+        }
+        else if (input <= anzahlRezepte)
         {
             mProzessor->zubereiten(mRezepte->getRezept(input-1));
         }
-        else
-        {
-            cout << "Ungueltige Eingabe!" << endl;
-            //input = -1;
-            cin.clear();
-            cin.ignore(10000, '\n');
-            continue;
-        }
-        
     }
 
     cout << "Bye!" << endl;

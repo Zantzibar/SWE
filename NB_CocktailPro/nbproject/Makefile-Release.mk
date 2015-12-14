@@ -37,7 +37,6 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 OBJECTFILES= \
 	${OBJECTDIR}/Cocktailmixer.o \
 	${OBJECTDIR}/Dosierer.o \
-	${OBJECTDIR}/GUI.o \
 	${OBJECTDIR}/Geraet.o \
 	${OBJECTDIR}/MischbaresRezepteBuch.o \
 	${OBJECTDIR}/Mischbehaelter.o \
@@ -65,11 +64,13 @@ FFLAGS=
 ASFLAGS=
 
 # Link Libraries and Options
-LDLIBSOPTIONS=
+LDLIBSOPTIONS=Rezeptbuch/Rezeptbuch_g++_CASE_Ubuntu.o
 
 # Build Targets
 .build-conf: ${BUILD_SUBPROJECTS}
 	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/nb_cocktailpro
+
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/nb_cocktailpro: Rezeptbuch/Rezeptbuch_g++_CASE_Ubuntu.o
 
 ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/nb_cocktailpro: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
@@ -84,11 +85,6 @@ ${OBJECTDIR}/Dosierer.o: Dosierer.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Dosierer.o Dosierer.cpp
-
-${OBJECTDIR}/GUI.o: GUI.cpp 
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/GUI.o GUI.cpp
 
 ${OBJECTDIR}/Geraet.o: Geraet.cpp 
 	${MKDIR} -p ${OBJECTDIR}

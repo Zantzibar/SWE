@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<configurationDescriptor version="94">
+<configurationDescriptor version="95">
   <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
       <itemPath>Cocktailmixer.h</itemPath>
       <itemPath>Dosierer.h</itemPath>
-      <itemPath>GUI.h</itemPath>
       <itemPath>Geraet.h</itemPath>
       <itemPath>MischbaresRezepteBuch.h</itemPath>
       <itemPath>Mischbehaelter.h</itemPath>
@@ -29,7 +28,6 @@
                    projectFiles="true">
       <itemPath>Cocktailmixer.cpp</itemPath>
       <itemPath>Dosierer.cpp</itemPath>
-      <itemPath>GUI.cpp</itemPath>
       <itemPath>Geraet.cpp</itemPath>
       <itemPath>MischbaresRezepteBuch.cpp</itemPath>
       <itemPath>Mischbehaelter.cpp</itemPath>
@@ -64,6 +62,7 @@
       </toolsSet>
       <compileType>
         <linkerTool>
+          <output>${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/nb_cocktailpro</output>
           <linkerLibItems>
             <linkerLibFileItem>RezeptbuchBinaries/Rezeptbuch_g++_CASE_Ubuntu.o</linkerLibFileItem>
           </linkerLibItems>
@@ -76,10 +75,6 @@
       <item path="Dosierer.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Dosierer.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="GUI.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="GUI.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Geraet.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -147,6 +142,11 @@
         <asmTool>
           <developmentMode>5</developmentMode>
         </asmTool>
+        <linkerTool>
+          <linkerLibItems>
+            <linkerLibFileItem>Rezeptbuch/Rezeptbuch_g++_CASE_Ubuntu.o</linkerLibFileItem>
+          </linkerLibItems>
+        </linkerTool>
       </compileType>
       <item path="Cocktailmixer.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -155,10 +155,6 @@
       <item path="Dosierer.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Dosierer.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="GUI.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="GUI.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Geraet.cpp" ex="false" tool="1" flavor2="0">
       </item>

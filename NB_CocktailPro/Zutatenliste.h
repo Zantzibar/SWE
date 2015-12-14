@@ -15,8 +15,7 @@ using namespace std;
 /**
  * Enth�lt Zutaten
  */
-class Zutatenliste
-{
+class Zutatenliste{
 public:
 	Zutatenliste();
 
