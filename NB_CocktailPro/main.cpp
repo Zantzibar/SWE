@@ -12,23 +12,23 @@
 
 
 using namespace std;
-
+// main-Funktion
 int main(int argc, char * argv[])
 {
     cout << "start programm" << endl;
-
-    // turbo modus aktiv?
+    
+    // starten des turbomodus durch Parameter "turbo"
     for (int i = 0; i < argc; i++)
-    {
+    {   // abfrage nach Turbomodus
         if (strcmp(argv[i], "turbo") == 0)
-        {
+        {   // Timergeschwindigkeit wird um Faktor 10 erhöht - zum ändern des Faktors siehe Klasse: Timer
             Timer::setTurboModeAktiv(true);
             cout << "Starte im TURBO-Modus!" << endl;
 
             break;
         }
     }
-    
+    // unser Cocktailmixer wird erzeugt
     Cocktailmixer* cockMix = new Cocktailmixer();
 
     

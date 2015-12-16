@@ -36,8 +36,9 @@ public:
 	/**
 	 * 
 	 */
+        //abgeleitet von Klasse: Observer
 	void update();
-	
+	// Notwendig zur Identifizierung des Dosierers im Vector<Geraet* > im Rezepturprozessor
         string getZutat(){return m_sZutat;};
         
 private:
@@ -46,7 +47,7 @@ private:
     int m_maxMenge;
     Waage * m_Waage;
     string m_sZutat;
-
+    // wird nur vom Dosierer selbst benötigt
     void dosieren(float gewicht, int iTime);
 
 };

@@ -14,14 +14,14 @@
 #include <vector>
 
 using namespace std;
-
+//forward deklaration
 class Geraet;
 /**
- * Enth�lt ein Rezept und deligiert die einzelnen Schritte
+ * Enthaelt ein Rezept und deligiert die einzelnen Schritte
  */
 class RezepturProzessor
 {
-	
+//weiterführende Kommentare in RezepturProzessor.cpp	
 public:
 
     /**
@@ -38,7 +38,6 @@ private:
     /**
      * 
      */
-    Geraet * m_Dosierstation;
     
     vector< Geraet * > vectorGeraetZutat;
     

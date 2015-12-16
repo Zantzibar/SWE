@@ -15,6 +15,7 @@ public:
 	/**
 	 * 
 	 */
+         //wird von Klasse: Dosierer überschrieben
 	virtual void update() = 0;
 	
 };

@@ -16,7 +16,7 @@ Timer::Timer()
 
 void Timer::sleep(int iMS)
 {
-    // Gerippt von CloneAndOwn.
+    // übernommen von CloneAndOwn.
 
     static const float multi_10 = 0.1f;
 
@@ -25,7 +25,7 @@ void Timer::sleep(int iMS)
         iMS = (int)((float)iMS * multi_10);
     }
     
-    // clown and own
+    // clown and owl
     clock_t limit;
     clock_t now = clock();
 

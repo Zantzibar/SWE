@@ -25,7 +25,7 @@ public:
 
     //Liefert die Aktion der Einheit zurück.
     string getAktion() const;
-
+// protected für einfachen späteren Zugriff bei der BEstimmung des Richtigen Dosiereres im vector<Geraet*>  
 protected:
     //Der Name der Aktion, die diese Einheit durchführt.
     string mAktion;
